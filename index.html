@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpiderWeb</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9fb;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      background: linear-gradient(90deg, #0d47a1, #1976d2);
+      color: white;
+    }
+    nav .logo {
+      font-weight: 700;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffcc80;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: linear-gradient(120deg, #42a5f5, #5c6bc0, #7e57c2);
+      color: white;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+    .hero span {
+      color: #ffd54f;
+    }
+    .hero p {
+      margin: 1rem auto;
+      font-size: 1.2rem;
+      max-width: 700px;
+    }
+    .hero button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 30px;
+      background: #ff7043;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .hero button:hover {
+      background: #f4511e;
+    }
+
+    .info {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: #fff;
+    }
+    .info h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #0d47a1;
+    }
+    .info p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      padding: 3rem 5%;
+    }
+    .benefit-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .benefit-card:hover {
+      transform: translateY(-8px);
+    }
+    .benefit-card h3 {
+      color: #1976d2;
+      margin-bottom: 0.8rem;
+    }
+    .benefit-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* Topics Section */
+    .topics {
+      padding: 3rem 5%;
+      background: #f0f4ff;
+      text-align: center;
+    }
+    .topics h2 {
+      font-size: 2rem;
+      color: #0d47a1;
+      margin-bottom: 2rem;
+    }
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .topic-card {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .topic-card:hover {
+      transform: translateY(-10px);
+    }
+    .topic-card img {
+      width: 60px;
+      margin-bottom: 1rem;
+    }
+    .topic-card h3 {
+      color: #1976d2;
+      margin-bottom: 0.5rem;
+    }
+    .topic-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">SpiderWeb</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Course</a></li>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Forum</a></li>
+      <li><a href="#">Login/Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>Belajar <span>Web Programming</span> dari Nol 🚀</h1>
+    <p>Platform interaktif untuk mahasiswa, pemula, dan profesional yang ingin menguasai HTML, CSS, JavaScript, dan PHP secara terstruktur.</p>
+    <button>Daftar Sekarang</button>
+  </section>
+
+  <!-- Info -->
+  <section class="info">
+    <h2>Mengapa Pilih WP Course?</h2>
+    <p>
+      Kami menyediakan pembelajaran web programming mulai dari dasar hingga mahir. 
+      Dengan metode terstruktur, latihan interaktif, dan dukungan forum diskusi, 
+      kamu bisa belajar kapan saja dan di mana saja.
+    </p>
+  </section>
+
+  <!-- Benefits -->
+  <section class="benefits">
+    <div class="benefit-card">
+      <h3>📘 Materi Lengkap</h3>
+      <p>Belajar HTML, CSS, JavaScript, dan PHP dari dasar hingga lanjutan.</p>
+    </div>
+    <div class="benefit-card">
+      <h3>📝 Latihan Interaktif</h3>
+      <p>Kerjakan quiz dan coding exercise untuk menguji pemahamanmu.</p>
+    </div>
+    <div class="benefit-card">
+      <h3>🎓 Sertifikat</h3>
+      <p>Dapatkan sertifikat kelulusan resmi setelah menyelesaikan course.</p>
+    </div>
+    <div class="benefit-card">
+      <h3>🤝 Forum Diskusi</h3>
+      <p>Bertanya dan berdiskusi langsung dengan siswa lain & instruktur.</p>
+    </div>
+  </section>
+
+  <!-- Topik Utama -->
+  <section class="topics">
+    <h2>Topik Utama</h2>
+    <div class="topic-grid">
+      <div class="topic-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Logo">
+        <h3>HTML</h3>
+        <p>Belajar struktur dasar web: heading, paragraf, link, tabel, form.</p>
+      </div>
+      <div class="topic-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Logo">
+        <h3>CSS</h3>
+        <p>Mengatur tampilan web: layout, warna, grid, flexbox, responsive design.</p>
+      </div>
+      <div class="topic-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Logo">
+        <h3>JavaScript</h3>
+        <p>Interaktivitas web: variabel, fungsi, DOM, event, manipulasi elemen.</p>
+      </div>
+      <div class="topic-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="PHP Logo">
+        <h3>PHP</h3>
+        <p>Pemrograman server-side: form handling, database MySQL, CRUD.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Web Programming Course. All rights reserved.
+  </footer>
+</body>
+</html>
